@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Form - Speech Input</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>HSBC Card Form</h2>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-12">
+		
+			<h4 class="mb-3">Personal Details</h4>
+			<form class="needs-validation" novalidate>
+		
+			<h6 class="md-4">Residential status</h6>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="rstatus">Resident
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="rstatus">Non-Resident
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="rstatus">Foreign national
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="rstatus">Person of Indian Origin
+			  </label>
+			</div>
+			
+			<h6 class="md-4" style="padding-top:10px">Salutation</h6>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="salutation">Mr.
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="salutation">Mrs.
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="salutation">Ms.
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="salutation">Mst.
+			  </label>
+			</div>
+			<div class="form-check-inline">
+			  <label class="form-check-label">
+				<input type="radio" class="form-check-input" name="salutation">Others
+			  </label>
+			</div>
+			
+			<div class="row" style="padding-top:10px;">
+				<div class="col-md-12">
+					<h6>Full Name</h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">First name</label>
+					<input type="text" class="form-control" id="FNfirstName" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid first name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="middleName">Middle name</label>
+					<input type="text" class="form-control" id="FNmiddleName" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid middle name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="lastName">Last name</label>
+					<input type="text" class="form-control" id="FNlastName" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid last name is required.
+					</div>
+				</div>
+            </div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h6>Former/Other/Maiden name (If any)</h6>
+				</div>
+              <div class="col-md-4 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="ONfirstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="middleName">Middle name</label>
+                <input type="text" class="form-control" id="ONmiddleName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid middle name is required.
+                </div>
+              </div>
+			  <div class="col-md-4 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="ONlastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h6>Name (Same as per ID proof)</h6>
+				</div>
+              <div class="col-md-4 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="IDfirstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="middleName">Middle name</label>
+                <input type="text" class="form-control" id="IDmiddleName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid middle name is required.
+                </div>
+              </div>
+			  <div class="col-md-4 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="IDlastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h6>Date of Birth</h6>
+				</div>
+				
+				<div class="col-md-1 mb-3">
+					<label for="day"></label>
+					<input type="text" class="form-control" id="DoBday" placeholder="DD" value="" required>
+					<div class="invalid-feedback">
+					  Valid Date is required.
+					</div>
+				</div>
+				<div class="col-md-2 mb-3">
+					<label for="month"></label>
+					<input type="text" class="form-control" id="BoBmonth" placeholder="MM" value="" required>
+					<div class="invalid-feedback">
+					  Valid Month is required.
+					</div>
+				</div>
+				<div class="col-md-2 mb-3">
+					<label for="year"></label>
+					<input type="text" class="form-control" id="DoByear" placeholder="YYYY" value="" required>
+					<div class="invalid-feedback">
+					  Valid Year is required.
+					</div>
+				</div>
+				
+				<div class="form-check-inline">
+					<h6 style="padding:0 20px;">Gender</h6>
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="gender">Male
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="gender">Female
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="gender">Third Gender
+					</label>
+				</div>				
+            </div>
+			
+			<div class="row mb-3">
+				<div class="form-check-inline">
+					<h6 style="padding:0 20px;">Marital status</h6>
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="mStatus">Married
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="mStatus">Single
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="mStatus">Others
+					</label>
+				</div>		
+			</div>
+			
+			<div class="row mb-3">
+				<div class="col-md-4 mb-3">
+					<label for="country">Country of birth</label>
+					<select class="custom-select d-block w-100" id="country" required>
+					  <option value="">Choose...</option>
+					  <option>India</option>
+					</select>
+					<div class="invalid-feedback">
+					  Please select a valid country.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="state">Place/City of Birth</label>
+					<select class="custom-select d-block w-100" id="state" required>
+						<option value="">Choose...</option>
+						<option>Mumbai</option>
+						<option>Pune</option>
+					</select>
+					<div class="invalid-feedback">
+						Please provide a valid place.
+					</div>
+				</div>
+              
+				<div class="col-md-4 mb-3">
+					<label for="nationality">Nationality/Citizenship of</label>
+					<input type="text" class="form-control" id="nationality" placeholder="" value="" required>
+					<div class="invalid-feedback">
+						Valid nationality is required.
+					</div>
+				</div>
+            </div>
+			
+			<div class="row mb-3">
+				<div class="form-check-inline">
+					<h6 style="padding:0 20px;">Multiple Nationality</h6>
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="mStatus">Yes
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="mStatus">No
+					</label>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">Nationality/Citizenship 1</label>
+					<input type="text" class="form-control" id="nationality1" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					Valid nationality is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">Nationality/Citizenship 2</label>
+					<input type="text" class="form-control" id="nationality2" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					Valid nationality is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">KYC number</label>
+					<input type="text" class="form-control" id="kycNumber" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					Valid KYC Number is required.
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" style="padding-top:10px;">
+				<div class="col-md-12">
+					<h6>Father's Name</h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">First name</label>
+					<input type="text" class="form-control" id="fatherFirst" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid first name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="middleName">Middle name</label>
+					<input type="text" class="form-control" id="fatherMiddle" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid middle name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="lastName">Last name</label>
+					<input type="text" class="form-control" id="fatherLast" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid last name is required.
+					</div>
+				</div>
+            </div>
+			
+			<div class="row" style="padding-top:10px;">
+				<div class="col-md-12">
+					<h6>Spouse's Name (if available)</h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">First name</label>
+					<input type="text" class="form-control" id="spouseFirst" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid first name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="middleName">Middle name</label>
+					<input type="text" class="form-control" id="spouseMiddle" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid middle name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="lastName">Last name</label>
+					<input type="text" class="form-control" id="spouseLast" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid last name is required.
+					</div>
+				</div>
+            </div>
+
+			<div class="row" style="padding-top:10px;">
+				<div class="col-md-12">
+					<h6>Mother’s maiden name</h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="firstName">First name</label>
+					<input type="text" class="form-control" id="motherFirst" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid first name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="middleName">Middle name</label>
+					<input type="text" class="form-control" id="motherMiddle" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid middle name is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="lastName">Last name</label>
+					<input type="text" class="form-control" id="motherLast" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid last name is required.
+					</div>
+				</div>
+            </div>
+			
+			<div class="row" style="padding-top:10px;">
+				<div class="col-md-12">
+					<h6>Officially Valid Document - Proof of Identity:</h6>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="PANcard">PAN card Number</label>
+					<input type="text" class="form-control" id="PAN" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid PAN is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="Aadhaar">UID Aadhaar number (if eligible)</label>
+					<input type="text" class="form-control" id="UID" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid UID is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="Passport">Passport/NREGA Card</label>
+					<input type="text" class="form-control" id="Passport" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid Passport is required.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="drivingLicense">Voters ID/Driving Licence</label>
+					<input type="text" class="form-control" id="drivingLicense" placeholder="" value="" required>
+					<div class="invalid-feedback">
+					  Valid Licence/ Voters ID is required.
+					</div>
+				</div>
+            </div>
+			
+			<div class="row mb-3">
+				<div class="col-md-12">
+					<h6>Officially Valid Documents - Proof of Address (any one)</h6>
+				</div>
+				<div class="form-check-inline" style="padding-left: 15px;">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">Aadhaar card
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">Passport
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">Voters ID
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">NREGA job card
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">Driving licence
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="PoA">Others
+					</label>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="addressOther"></label>
+					<input type="text" class="form-control" id="addressOther" placeholder="" value="">
+				</div>
+			</div>
+			
+			<div class="row mb-3">
+				<div class="col-md-12">
+					<h6>Education</h6>
+				</div>
+				<div class="form-check-inline" style="padding-left: 15px;">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="education">Undergraduate
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="education">Graduate
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="education">Postgraduate
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="education">Professional
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="education">Others
+					</label>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="eduOther"></label>
+					<input type="text" class="form-control" id="eduOther" placeholder="" value="">
+				</div>
+			</div>
+          </form>
+        </div>
+      </div>
+
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">Thank You!</p>
+		</footer>
+    </div>
+  </body>
+</html>
